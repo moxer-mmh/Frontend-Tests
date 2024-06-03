@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MoXeR MMH - Portfolio</title>
+  <link rel="stylesheet" href="./styles/portfolio.css" />
+  <script src="./scripts/portfolio.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        MoXeR MMH
+        <div class="contact_info">
+          <img src="./html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope" />
+          moxermmh@moxermmh.moxermmh
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="./html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope" />
+          +13456764598
+
+        </div>
+      </div>
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Projects</a>
+        <a class="topmenu" href="#recommendations">Recommendations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="./html_finalprojimages/Programmer-PNG-HD-Isolated.png" class="profile_image" />
+    </div>
+
+    <div>
+      <h1>
+        Hi, I'm MoXeR MMH! <img src="./html_finalprojimages/waving-hand.png" width="60px" />
+      </h1>
+      <p>
+        I am a Web Developer with 3 years of experience in developing websites and web applications. I have a strong
+        foundation in HTML, CSS, and JavaScript. I have worked on various projects that have helped me gain experience
+        in developing secure and user-friendly websites. I am passionate about learning new technologies and
+        implementing them in my projects.
+
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+
+    <div class="all_skills">
+      <div class="skill">
+        <img src="./html_finalprojimages/html5.png" />
+        <h6>HTML</h6>
+        <p>2 years experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./html_finalprojimages/js.jpeg" />
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./html_finalprojimages/CSS3.png" />
+        <h6>CSS</h6>
+        <p>2 years experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./html_finalprojimages/java.png" />
+        <h6>java</h6>
+        <p>1 year experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./html_finalprojimages/node.png" />
+        <h6>Nodejs</h6>
+        <p>1 year experience</p>
+      </div>
+
+      <div class="skill">
+        <img src="./html_finalprojimages/react.png" />
+        <h6>React</h6>
+        <p>1 year experience</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>
+      Projects
+    </h2>
+    <div style="clear:both;"></div>
+
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Mr Thomas J. Watson</h3>
+        <ul>
+          <li>a website about Mr Thomas J. Watson</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Unit Conversions</h3>
+        <ul>
+          <li>a website that convert units like temperature from celsius to fahrenheit , weight from kg to pounds and
+            distance from km to mile</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Solar System</h3>
+        <ul>
+          <li>a website that give informations about our solar system</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div style="clear:both;"></div>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        MoXeR MMH is a talented web developer. He has worked on multiple projects for me and has always delivered
+        high-quality work. He is a quick learner and has a good understanding of web technologies. I would highly
+        recommend him for any web development project.
+        <span>&#8221;</span>
+      </div>
+
+      <div class="recommendation">
+        <span>&#8220;</span>
+        working with MoXeR MMH was a great experience. He is a dedicated developer who is always willing to go the extra
+        mile to deliver high-quality work. He has a good understanding of web technologies . I would highly recommend
+        him for any web development project.
+        <span>&#8221;</span>
+      </div>
+
+      <div class="recommendation">
+        <span>&#8220;</span>
+        I have worked with MoXeR MMH on multiple projects and have always been impressed with his work. He is a talented
+        one who is always willing to learn new things and improve his skills. I would highly recommend him for any web
+        development project.
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" placeholder="Name (Optional)"> <br />
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+        width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="iconbutton" id="iconhome">
+    <a href="./index.html">
+      <img
+        src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg" />
+      </>
+    </a>
+  </div>
+
+  <div class="popup" id="popup" class="flex_center">
+    <img src="./html_finalprojimages/checkmark--outline.svg" />
+    <h3>Thanks for leaving a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+
+</html>
